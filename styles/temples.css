@@ -76,12 +76,16 @@ nav {
     display: block;
 }
 
-.navigation a:hover {
+/* .navigation a:hover {
     background-color: #6b1b70;
     color: #ffd700;
     text-decoration: underline;
-}
+} */
 
+.navigation a:hover {
+    background-color: #ffffff; 
+    color: #4a0e4e;            
+}
 
 main {
     max-width: 1200px;
