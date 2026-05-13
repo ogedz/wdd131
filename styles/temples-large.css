@@ -1,8 +1,5 @@
 @media only screen and (min-width: 37.5em) {
     
-    /* ========================================
-       HEADER & NAVIGATION (Desktop)
-       ======================================== */
     header {
         display: flex;
         justify-content: space-between;
@@ -14,12 +11,10 @@
         font-size: 2rem;
     }
     
-    /* Hide hamburger button */
     #menu {
         display: none;
     }
     
-    /* Horizontal navigation */
     .navigation {
         flex-direction: row;
         justify-content: flex-end;
@@ -37,9 +32,7 @@
         border-top: none;
     }
     
-    /* ========================================
-       MAIN CONTENT (Desktop)
-       ======================================== */
+
     main {
         padding: 2rem;
     }
@@ -49,15 +42,12 @@
         margin: 2rem 0 1.5rem;
     }
     
-    /* Temple Grid - Desktop: 3 Columns */
+    
     .temple-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
     
-    /* ========================================
-       FOOTER (Desktop)
-       ======================================== */
     footer {
         padding: 2rem;
         margin-top: 3rem;

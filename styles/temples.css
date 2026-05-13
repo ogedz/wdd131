@@ -11,9 +11,6 @@ body {
     background-color: #ffffff;
 }
 
-/* ============================================
-   HEADER & NAVIGATION (Mobile)
-   ============================================ */
 header {
     background-color: #4a0e4e;
     color: #ffffff;
@@ -85,9 +82,7 @@ nav {
     text-decoration: underline;
 }
 
-/* ============================================
-   MAIN CONTENT
-   ============================================ */
+
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -101,7 +96,6 @@ main h2 {
     text-align: center;
 }
 
-/* Temple Grid - Mobile: 1 Column */
 .temple-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -126,9 +120,7 @@ figcaption {
     font-size: 0.9rem;
 }
 
-/* ============================================
-   FOOTER
-   ============================================ */
+
 footer {
     background-color: #4a0e4e;
     color: #ffffff;
