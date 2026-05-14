@@ -1,30 +1,38 @@
+/*
+ * temples-large.css
+ * Responsive overrides for screens >= 600px (37.5em).
+ * Requires base.css (and temples.css if on the temples page) to be loaded first.
+ */
+
 @media only screen and (min-width: 37.5em) {
-    
+
+    /* ─── Header ──────────────────────────────────────────── */
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1rem 2rem;
     }
-    
+
     header h1 {
         font-size: 2rem;
     }
-    
+
+    /* ─── Hide hamburger, show full nav ───────────────────── */
     #menu {
         display: none;
     }
-    
+
     .navigation {
         flex-direction: row;
         justify-content: flex-end;
         gap: 0.5rem;
     }
-    
+
     .navigation li {
         width: auto;
     }
-    
+
     .navigation a {
         display: block;
         padding: 0.75rem 1.5rem;
@@ -32,28 +40,31 @@
         border-top: none;
     }
 
+    /* ─── Main ────────────────────────────────────────────── */
     main {
         padding: 2rem;
     }
-    
+
     main h1 {
         font-size: 2.5rem;
     }
-    
+
+    /* ─── Cards ───────────────────────────────────────────── */
     .cards-grid {
         grid-template-columns: 2fr 1fr;
     }
-    
+
     .temple-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
-    
+
+    /* ─── Footer ──────────────────────────────────────────── */
     footer {
         padding: 2rem;
         margin-top: 3rem;
     }
-    
+
     footer p {
         font-size: 1rem;
     }
