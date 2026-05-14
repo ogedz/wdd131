@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Album</title>
-    <meta name="description" content="A photo album of temples around the world">
+    <title>WDD 131 – Dynamic Web Fundamentals – Monday Ogedengbe</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Monday Ogedengbe. A responsive photo album showcasing temples of The Church of Jesus Christ of Latter-day Saints from around the world with filtering capabilities.">
     <meta name="author" content="Monday Ogedengbe">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
     
+    <script src="scripts/getdates.js" defer></script>
     <script src="scripts/temples.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Temple Album</h1>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
         <button id="menu" aria-label="Toggle navigation menu" aria-expanded="false"></button>
         <nav>
             <ul class="navigation">
@@ -32,53 +33,71 @@
     </header>
 
     <main>
-        <h2>Home</h2>
+        <h1>Temple Album</h1>
         
-        <div class="temple-grid">
-            <figure>
-                <img src="images/temple.jpg" alt="San Diego California Temple white spires against blue sky" width="400" height="250">
-                <figcaption>San Diego California</figcaption>
-            </figure>
+        <div class="cards-grid">
+            <section class="card">
+                <h2>Home</h2>
+                <div class="temple-grid">
+                    <figure>
+                        <img src="images/temple.jpg" alt="San Diego California Temple white spires against blue sky" width="400" height="250">
+                        <figcaption>San Diego California</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="images/temple.jpg" alt="San Diego California Temple white spires against blue sky" width="400" height="250">
+                        <figcaption>San Diego California</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="images/temple.jpg" alt="San Diego California Temple white spires against blue sky" width="400" height="250">
+                        <figcaption>San Diego California</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="images/temple.jpg" alt="San Diego California Temple white spires against blue sky" width="400" height="250">
+                        <figcaption>San Diego California</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="images/temple.jpg" alt="San Diego California Temple white spires against blue sky" width="400" height="250">
+                        <figcaption>San Diego California</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="images/temple.jpg" alt="San Diego California Temple white spires against blue sky" width="400" height="250">
+                        <figcaption>San Diego California</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="images/temple.jpg" alt="San Diego California Temple white spires against blue sky" width="400" height="250">
+                        <figcaption>San Diego California</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="images/temple.jpg" alt="San Diego California Temple white spires against blue sky" width="400" height="250">
+                        <figcaption>San Diego California</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="images/temple.jpg" alt="San Diego California Temple white spires against blue sky" width="400" height="250">
+                        <figcaption>San Diego California</figcaption>
+                    </figure>
+                </div>
+            </section>
             
-            <figure>
-                <img src="images/temple.jpg" alt="San Diego California Temple white spires against blue sky" width="400" height="250">
-                <figcaption>San Diego California</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="images/temple.jpg" alt="San Diego California Temple white spires against blue sky" width="400" height="250">
-                <figcaption>San Diego California</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="images/temple.jpg" alt="San Diego California Temple white spires against blue sky" width="400" height="250">
-                <figcaption>San Diego California</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="images/temple.jpg" alt="San Diego California Temple white spires against blue sky" width="400" height="250">
-                <figcaption>San Diego California</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="images/temple.jpg"alt="San Diego California Temple white spires against blue sky" width="400" height="250">
-                <figcaption>San Diego California</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="images/temple.jpg" alt="San Diego California Temple white spires against blue sky" width="400" height="250">
-                <figcaption>San Diego California</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="images/temple.jpg" alt="San Diego California Temple white spires against blue sky" width="400" height="250">
-                <figcaption>San Diego California</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="images/temple.jpg" alt="San Diego California Temple white spires against blue sky" width="400" height="250">
-                <figcaption>San Diego California</figcaption>
-            </figure>
+            <section class="card resources-card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://dev.to" target="_blank" rel="noopener">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com" target="_blank" rel="noopener">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com" target="_blank" rel="noopener">CSS-Tricks</a></li>
+                    <li><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></li>
+                    <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a></li>
+                    <li><a href="https://www.freecodecamp.org" target="_blank" rel="noopener">freeCodeCamp</a></li>
+                    <li><a href="https://picsum.photos" target="_blank" rel="noopener">Lorem Picsum Image Placeholder</a></li>
+                </ul>
+            </section>
         </div>
     </main>
 

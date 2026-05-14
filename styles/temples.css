@@ -18,6 +18,14 @@ header {
     position: relative;
 }
 
+#course-title {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
 header h1 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -45,7 +53,7 @@ header h1 {
     content: "✕";
 }
 
-/* Navigation */
+/* Navigation with Flexbox */
 nav {
     margin-top: 0.5rem;
 }
@@ -76,29 +84,55 @@ nav {
     display: block;
 }
 
+/* Navigation hover effect */
 .navigation a:hover {
     background-color: #ffffff; 
     color: #4a0e4e;            
 }
 
+/* Main with limited width and centered */
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
 }
 
-main h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin: 1.5rem 0 1rem;
+main h1 {
+    font-size: 2rem;
     text-align: center;
+    color: #4a0e4e;
+    margin-bottom: 1.5rem;
+}
+
+/* Cards Grid with CSS Grid */
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Card styles */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    background-color: #4a0e4e;
+    color: #ffffff;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 .temple-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 figure {
@@ -118,7 +152,41 @@ figcaption {
     font-size: 0.9rem;
 }
 
+/* Resources Card */
+.resources-card ul {
+    list-style: none;
+    padding: 1.5rem;
+}
 
+.resources-card li {
+    margin-bottom: 0.7rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.resources-card li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: #d69e2e;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.resources-card a {
+    color: #2c5282;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.resources-card a:hover {
+    color: #d69e2e;
+    border-bottom-color: #d69e2e;
+}
+
+/* Footer */
 footer {
     background-color: #4a0e4e;
     color: #ffffff;
