@@ -7,10 +7,11 @@
     --light-bg: #f4f4f4;
     --white: #ffffff;
     --border-color: #dddddd;
-    --shadow-color: rgba(0, 0, 0, 0.08);
-    --nav-separator: rgba(255, 255, 255, 0.1);
+    --shadow-color: #00000014;
+    --nav-separator: #ffffff1a;
 }
 
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
