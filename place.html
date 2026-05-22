@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Monday Ogedengbe">
-    <title>Nigeria - The Giant of Africa</title>
     <meta name="description" content="Discover Nigeria - rich culture, vibrant cities, and natural beauty in West Africa.">
-    <link rel="stylesheet" href="styles/place.css">
+    <title>WDD 131 - Dynamic Web Fundamentals - Monday Ogedengbe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/place.js" defer></script>
 <base target="_blank">
 </head>
 <body>
     <header>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="place.html">Nigeria</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="resources.html">Resources</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="blog.html">Blog</a>
+        </nav>
         <h1>Nigeria</h1>
-        <p>The Giant of Africa</p>
     </header>
 
     <main>
@@ -26,7 +38,7 @@
             </picture>
         </div>
 
-        <section class="data">
+        <section class="card data">
             <h2>Data</h2>
             <div class="data-grid">
                 <span class="label">Area:</span>
@@ -38,7 +50,7 @@
                 <span class="label">Languages:</span>
                 <span class="value">English, Hausa, Yoruba, Igbo</span>
                 <span class="label">Currency:</span>
-                <span class="value">Naira (₦)</span>
+                <span class="value">Naira (&#8358;)</span>
                 <span class="label">Time Zone:</span>
                 <span class="value">UTC+1 (WAT)</span>
                 <span class="label">Calling Code:</span>
@@ -48,13 +60,13 @@
             </div>
         </section>
 
-        <section class="weather">
+        <section class="card weather">
             <h2>Weather</h2>
             <div class="weather-icon-mobile">
                 <img src="images/weather-icon.svg" alt="Partly cloudy weather icon" width="80" height="80">
             </div>
             <div class="weather-content">
-                <p><span class="label">Temperature:</span> <span class="value">32°C</span></p>
+                <p><span class="label">Temperature:</span> <span class="value">32&#176;C</span></p>
                 <p><span class="label">Conditions:</span> <span class="value">Partly Cloudy</span></p>
                 <p><span class="label">Wind:</span> <span class="value">12 km/h</span></p>
                 <p><span class="label">Wind Chill:</span> <span class="value" id="windchill">N/A</span></p>
@@ -63,7 +75,7 @@
     </main>
 
     <footer>
-        <p>&copy;<span id="currentyear"></span> 🌴 Monday Ogedengbe 🌴 Nigeria</p>
+        <p>&copy; <span id="currentyear"></span> &#127796; Monday Ogedengbe &#127796; Nigeria</p>
         <p id="lastModified"></p>
     </footer>
 </body>
