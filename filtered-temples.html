@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Monday Ogedengbe</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Monday Ogedengbe. Latter Day Temples around the World">
+    <meta name="author" content="Monday Ogedengbe">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="styles/base.css"> -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temple-large.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
+<base target="_blank">
+</head>
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <button id="menu" aria-label="Toggle navigation menu" aria-expanded="false"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="home" title="Home">Home</a></li>
+                <li><a href="#" id="old" title="Old">Old</a></li>
+                <li><a href="#" id="new" title="New">New</a></li>
+                <li><a href="#" id="large" title="Large">Large</a></li>
+                <li><a href="#" id="small" title="Small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple Album</h1>
+        <h2 id="current-filter">Home</h2>
+        <div class="temple-grid" id="temple-container">
+            <!-- Temple cards will be dynamically generated here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌴 Monday Ogedengbe 🌴 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

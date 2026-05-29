@@ -55,7 +55,7 @@
 
     .temple-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     footer {
@@ -65,11 +65,5 @@
 
     footer p {
         font-size: 1rem;
-    }
-}
-
-@media only screen and (min-width: 64em) {
-    .temple-grid {
-        grid-template-columns: repeat(3, 1fr);
     }
 }
