@@ -8,13 +8,19 @@
         padding: 1rem 2rem;
     }
 
-    #course-title {
-        font-size: 1.5rem;
+    header h1 {
+        font-size: 2rem;
         margin-bottom: 0;
     }
 
     #menu {
         display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
     .navigation {
@@ -45,12 +51,8 @@
         padding: 2rem;
     }
 
-    main h1 {
-        font-size: 2.5rem;
-    }
-
-    #current-filter {
-        font-size: 1.3rem;
+    main h2 {
+        font-size: 1.5rem;
     }
 
     .temple-grid {
