@@ -1,11 +1,13 @@
-// Get current review count from localStorage, or initialize to 0
-let reviewCount = parseInt(localStorage.getItem('reviewCount')) || 0;
+// Increment review count in localStorage and display it
+const STORAGE_KEY = 'reviewCount';
 
-// Increment the counter
-reviewCount++;
+// Read current count, increment, and save
+let count = Number(localStorage.getItem(STORAGE_KEY)) || 0;
+count += 1;
+localStorage.setItem(STORAGE_KEY, count);
 
-// Save back to localStorage
-localStorage.setItem('reviewCount', reviewCount);
-
-// Display the counter on the page
-document.getElementById('review-count').textContent = reviewCount;
+// Display the updated count
+const reviewCountEl = document.getElementById('review-count');
+if (reviewCountEl) {
+    reviewCountEl.textContent = count;
+}

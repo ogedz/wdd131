@@ -29,9 +29,11 @@ const products = [
 // Populate product select dropdown
 const productSelect = document.getElementById('product-name');
 
-products.forEach(product => {
-    const option = document.createElement('option');
-    option.value = product.id;
-    option.textContent = product.name;
-    productSelect.appendChild(option);
-});
+if (productSelect) {
+    products.forEach(product => {
+        const option = document.createElement('option');
+        option.value = product.id;
+        option.textContent = product.name;
+        productSelect.appendChild(option);
+    });
+}
