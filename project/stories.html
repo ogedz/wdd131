@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read real success stories from Nigerians who used clear career pathways to move from education into meaningful work.">
+  <meta name="author" content="Monday Ogedengbe">
+  <title>Success Stories | EduPath Nigeria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/stories.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Edu<span>Path</span> Nigeria</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">☰ Menu</button>
+      <nav class="main-nav" id="primary-navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="paths.html">Path Finder</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="stories.html" aria-current="page">Success Stories</a></li>
+          <li><a href="contact.html">Partner With Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero" style="padding-block: 3rem;">
+      <div class="container" style="grid-template-columns: 1fr;">
+        <div class="hero-content">
+          <p class="eyebrow">Success Stories</p>
+          <h1>Real people, real pathways</h1>
+          <p>Every journey looks different. These are stories from Nigerians across the country who turned their starting point into a career — read what worked for them.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card-grid cols-3" id="stories-grid">
+          <p>Loading stories…</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Story detail modal -->
+  <div class="modal-overlay" id="story-modal-overlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="story-modal-title">
+      <button class="modal-close" type="button" aria-label="Close story">&times;</button>
+      <h2 id="story-modal-title">Story title</h2>
+      <div id="story-modal-body">
+        <p>Story content goes here.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-col">
+        <h3>EduPath Nigeria</h3>
+        <p>Helping Nigerian students and graduates turn education into a clear career direction.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="paths.html">Path Finder</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="stories.html">Success Stories</a></li>
+          <li><a href="contact.html">Partner With Us</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>newsletter@edupath.ng</p>
+        <p>Lagos, Nigeria</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> EduPath Nigeria. Built by Monday Ogedengbe for WDD 131.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/stories.js"></script>
+</body>
+</html>

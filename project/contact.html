@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Partner with EduPath Nigeria, get in touch with our team, or subscribe to our newsletter for career pathway updates.">
+  <meta name="author" content="Monday Ogedengbe">
+  <title>Partner With Us | EduPath Nigeria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Edu<span>Path</span> Nigeria</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">☰ Menu</button>
+      <nav class="main-nav" id="primary-navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="paths.html">Path Finder</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="stories.html">Success Stories</a></li>
+          <li><a href="contact.html" aria-current="page">Partner With Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero" style="padding-block: 3rem;">
+      <div class="container" style="grid-template-columns: 1fr;">
+        <div class="hero-content">
+          <p class="eyebrow">Partner With Us</p>
+          <h1>Let's grow career pathways together</h1>
+          <p>Are you a training institution, employer, or organisation working on youth employment in Nigeria? Get in touch — we'd love to hear from you.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card-grid cols-2">
+
+          <div class="card">
+            <h2>Send us a message</h2>
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name">Full name</label>
+                <input type="text" id="contact-name" name="name" required>
+                <p class="error-message" id="contact-name-error" role="alert"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email address</label>
+                <input type="email" id="contact-email" name="email" required>
+                <p class="error-message" id="contact-email-error" role="alert"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-org">Organisation (optional)</label>
+                <input type="text" id="contact-org" name="organisation">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-reason">I'm reaching out about</label>
+                <select id="contact-reason" name="reason" required>
+                  <option value="">Select a reason</option>
+                  <option value="partnership">Training partnership</option>
+                  <option value="employer">Hiring / job opportunities</option>
+                  <option value="feedback">Feedback on EduPath</option>
+                  <option value="other">Something else</option>
+                </select>
+                <p class="error-message" id="contact-reason-error" role="alert"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="5" required></textarea>
+                <p class="form-hint">Please share at least a few sentences so we can route your message correctly.</p>
+                <p class="error-message" id="contact-message-error" role="alert"></p>
+              </div>
+
+              <button type="submit" class="btn btn-secondary">Send Message</button>
+
+              <div class="confirmation" id="contact-confirmation" role="status"></div>
+            </form>
+          </div>
+
+          <div>
+            <div class="card mt-md" style="margin-bottom: 1.5rem;">
+              <h2>Subscribe to our newsletter</h2>
+              <p>Get monthly updates on new pathways, training partners, and success stories from across Nigeria.</p>
+              <form id="newsletter-form" novalidate>
+                <div class="form-group">
+                  <label for="newsletter-email">Email address</label>
+                  <input type="email" id="newsletter-email" name="newsletter-email" required>
+                  <p class="error-message" id="newsletter-error" role="alert"></p>
+                </div>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+                <div class="confirmation" id="newsletter-confirmation" role="status"></div>
+              </form>
+            </div>
+
+            <div class="card">
+              <h2>Frequently asked questions</h2>
+              <div id="faq-accordion">
+
+                <div class="accordion-item">
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-1">
+                    Is EduPath Nigeria free to use?
+                  </button>
+                  <div class="accordion-panel" id="faq-1">
+                    <p>Yes. The Path Finder, Resources directory, and Success Stories are completely free for students and job seekers. Premium counselling features may be introduced in the future as optional add-ons.</p>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-2">
+                    How do I get my training centre listed?
+                  </button>
+                  <div class="accordion-panel" id="faq-2">
+                    <p>Send us a message using the form on this page with the reason "Training partnership." Our team will review your programme details and follow up with next steps for verification.</p>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-3">
+                    Are the salary ranges guaranteed?
+                  </button>
+                  <div class="accordion-panel" id="faq-3">
+                    <p>No. Salary ranges shown in the Path Finder are estimates based on publicly available information and should be used as a general guide, not a guarantee of earnings.</p>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-4">
+                    Can I save pathways without creating an account?
+                  </button>
+                  <div class="accordion-panel" id="faq-4">
+                    <p>Yes. Bookmarked pathways are saved directly in your browser using local storage, so no account or sign-up is required. Note that bookmarks are tied to the device and browser you use.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-col">
+        <h3>EduPath Nigeria</h3>
+        <p>Helping Nigerian students and graduates turn education into a clear career direction.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="paths.html">Path Finder</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="stories.html">Success Stories</a></li>
+          <li><a href="contact.html">Partner With Us</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>newsletter@edupath.ng</p>
+        <p>Lagos, Nigeria</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> EduPath Nigeria. Built by Monday Ogedengbe for WDD 131.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/contact.js"></script>
+</body>
+</html>

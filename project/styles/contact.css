@@ -1,0 +1,79 @@
+/* ==========================================================================
+   EduPath Nigeria — Contact / Partner Page Styles
+   Covers the FAQ accordion. Form, confirmation banner, and fieldset
+   styles are shared from base.css.
+   Author: Monday Ogedengbe
+   ========================================================================== */
+
+.accordion-item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  margin-bottom: var(--space-xs);
+  overflow: hidden;
+  background-color: var(--color-card);
+}
+
+.accordion-trigger {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: var(--space-sm) var(--space-md);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-ink);
+}
+
+.accordion-trigger::after {
+  content: "+";
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  transition: transform 0.2s ease;
+}
+
+.accordion-trigger[aria-expanded="true"]::after {
+  transform: rotate(45deg);
+}
+
+.accordion-panel {
+  padding: 0 var(--space-md);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease, padding 0.25s ease;
+}
+
+.accordion-panel.open {
+  padding: 0 var(--space-md) var(--space-md);
+  max-height: 400px;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: var(--space-sm);
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  font-size: 1.1rem;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  background-color: var(--color-accent);
+  color: var(--color-ink);
+  text-decoration: none;
+}

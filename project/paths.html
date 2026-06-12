@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Use the EduPath Nigeria Path Finder to get personalised career pathway recommendations based on your education level, interests, and location.">
+  <meta name="author" content="Monday Ogedengbe">
+  <title>Path Finder | EduPath Nigeria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/paths.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Edu<span>Path</span> Nigeria</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">☰ Menu</button>
+      <nav class="main-nav" id="primary-navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="paths.html" aria-current="page">Path Finder</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="stories.html">Success Stories</a></li>
+          <li><a href="contact.html">Partner With Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero" style="padding-block: 3rem;">
+      <div class="container" style="grid-template-columns: 1fr;">
+        <div class="hero-content">
+          <p class="eyebrow">Path Finder</p>
+          <h1>Where do you want to go?</h1>
+          <p>Answer three quick questions and we'll match you with career pathways that fit your education level, interests, and location — including the steps, timeline, and salary range to expect.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form id="path-finder-form" novalidate>
+          <fieldset>
+            <legend>Your details</legend>
+
+            <div class="form-group">
+              <label for="education-level">What is your current education level?</label>
+              <select id="education-level" name="education-level" required>
+                <option value="">Select your level</option>
+                <option value="ssce">SSCE / Secondary School Leaver</option>
+                <option value="nd">National Diploma (ND)</option>
+                <option value="hnd">Higher National Diploma (HND)</option>
+                <option value="bsc">Bachelor's Degree (BSc)</option>
+                <option value="msc">Master's Degree (MSc) or higher</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="field-interest">Which field interests you most?</label>
+              <select id="field-interest" name="field-interest" required>
+                <option value="">Select a field</option>
+                <option value="tech">Technology</option>
+                <option value="business">Business &amp; Finance</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="agriculture">Agriculture</option>
+                <option value="creative">Creative Arts &amp; Fashion</option>
+                <option value="trades">Skilled Trades</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="location">Where are you based?</label>
+              <select id="location" name="location" required>
+                <option value="">Select your location</option>
+                <option value="lagos">Lagos</option>
+                <option value="abuja">Abuja</option>
+                <option value="ibadan">Ibadan</option>
+                <option value="port-harcourt">Port Harcourt</option>
+                <option value="any">Other / Anywhere in Nigeria</option>
+              </select>
+            </div>
+
+            <p class="error-message" id="form-error" role="alert"></p>
+
+            <button type="submit" class="btn btn-secondary">Show My Pathways</button>
+          </fieldset>
+        </form>
+
+        <div class="pathway-divider" role="presentation"></div>
+
+        <div id="path-results" aria-live="polite">
+          <p>Fill in the form above to see pathway recommendations here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background-color: var(--color-card); border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Your saved pathways</h2>
+          <p>Pathways you bookmark are saved on this device so you can come back to them anytime.</p>
+        </div>
+        <div id="saved-paths">
+          <p>You haven't saved any pathways yet.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-col">
+        <h3>EduPath Nigeria</h3>
+        <p>Helping Nigerian students and graduates turn education into a clear career direction.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="paths.html">Path Finder</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="stories.html">Success Stories</a></li>
+          <li><a href="contact.html">Partner With Us</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>newsletter@edupath.ng</p>
+        <p>Lagos, Nigeria</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> EduPath Nigeria. Built by Monday Ogedengbe for WDD 131.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/career-data.js"></script>
+  <script src="scripts/paths.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

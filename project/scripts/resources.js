@@ -1,0 +1,189 @@
+/* ==========================================================================
+   EduPath Nigeria — Resources page logic
+   Demonstrates: DOM interaction, conditional branching, array methods
+   (.filter(), .forEach()), template literals, lazy-loaded images.
+   ========================================================================== */
+
+const trainingResources = [
+  {
+    id: "alx-africa",
+    name: "ALX Africa",
+    field: "tech",
+    type: "Online Bootcamp",
+    location: "Online (Nationwide)",
+    description: "Intensive software engineering and data programmes with mentorship and a strong alumni network across Africa.",
+    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    id: "decagon",
+    name: "Decagon Institute",
+    field: "tech",
+    type: "Bootcamp",
+    location: "Lagos",
+    description: "Full-time software engineering fellowship that places graduates directly with hiring partners after training.",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    id: "yaba-college",
+    name: "Yaba College of Technology",
+    field: "trades",
+    type: "Polytechnic",
+    location: "Lagos",
+    description: "Offers ND and HND programmes across engineering, applied sciences, and technical trades.",
+    image: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    id: "itf-vocational",
+    name: "ITF Vocational Training Centres",
+    field: "trades",
+    type: "Government Programme",
+    location: "Multiple states",
+    description: "Industrial Training Fund centres offering hands-on training in electrical work, automotive repair, and more.",
+    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    id: "lagos-business-school",
+    name: "Lagos Business School — Short Courses",
+    field: "business",
+    type: "Executive Education",
+    location: "Lagos",
+    description: "Short, practical courses in entrepreneurship, finance, and management for working professionals.",
+    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    id: "ican",
+    name: "ICAN Professional Programme",
+    field: "business",
+    type: "Professional Body",
+    location: "Nationwide",
+    description: "The Institute of Chartered Accountants of Nigeria's qualification pathway for professional accountants.",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    id: "schools-of-nursing",
+    name: "Schools of Nursing (State-run)",
+    field: "healthcare",
+    type: "Diploma Programme",
+    location: "Multiple states",
+    description: "Government-run nursing schools offering accredited programmes leading to NMCN licensure.",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    id: "pcn-pharmacy-tech",
+    name: "PCN-Accredited Pharmacy Tech Schools",
+    field: "healthcare",
+    type: "OND Programme",
+    location: "Multiple states",
+    description: "Polytechnic programmes accredited by the Pharmacists Council of Nigeria for pharmacy technicians.",
+    image: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    id: "iita-youth-agripreneurs",
+    name: "IITA Youth Agripreneurs",
+    field: "agriculture",
+    type: "Incubation Programme",
+    location: "Ibadan",
+    description: "Hands-on agribusiness training and incubation for young people interested in modern farming and agro-processing.",
+    image: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    id: "fadama-extension",
+    name: "Fadama Extension Services",
+    field: "agriculture",
+    type: "Government Programme",
+    location: "Multiple states",
+    description: "Agricultural extension support connecting farmers and trainees with modern techniques and resources.",
+    image: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    id: "fashion-academy-lagos",
+    name: "Fashion Academy Lagos",
+    field: "creative",
+    type: "Vocational School",
+    location: "Lagos",
+    description: "Pattern-making, sewing, and fashion business courses for aspiring designers and entrepreneurs.",
+    image: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    id: "spoken-word-academy",
+    name: "Spoken Word & Design Academy",
+    field: "creative",
+    type: "Online Course",
+    location: "Online (Nationwide)",
+    description: "Graphic design, branding, and content creation courses with project-based learning.",
+    image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=500&q=60"
+  }
+];
+
+/**
+ * Build the markup for one resource card. Image src is left blank and
+ * placed in data-lazy so main.js's IntersectionObserver can load it.
+ */
+function buildResourceCardMarkup(resource) {
+  return `
+    <article class="card" data-field="${resource.field}">
+      <img
+        data-lazy="${resource.image}"
+        alt="${resource.name} training facility"
+        width="500"
+        height="375"
+        loading="lazy"
+      >
+      <span class="tag">${resource.type}</span>
+      <h3>${resource.name}</h3>
+      <p>${resource.description}</p>
+      <p><strong>Location:</strong> ${resource.location}</p>
+    </article>
+  `;
+}
+
+/**
+ * Render resource cards, optionally filtered by field.
+ * "all" shows every resource.
+ */
+function renderResources(field) {
+  const grid = document.getElementById("resources-grid");
+  if (!grid) return;
+
+  const filtered =
+    field === "all"
+      ? trainingResources
+      : trainingResources.filter((resource) => resource.field === field);
+
+  if (filtered.length === 0) {
+    grid.innerHTML = `<p>No resources found for this category yet. Check back soon, or <a href="contact.html">suggest a partner</a>.</p>`;
+    return;
+  }
+
+  grid.innerHTML = filtered.map(buildResourceCardMarkup).join("");
+
+  // Newly inserted images need lazy-loading wired up again.
+  if (typeof initLazyLoading === "function") {
+    initLazyLoading();
+  }
+}
+
+/**
+ * Handle a click on a filter chip: update pressed state and re-render.
+ */
+function handleFilterClick(event) {
+  const chip = event.target.closest(".filter-chip");
+  if (!chip) return;
+
+  const allChips = document.querySelectorAll(".filter-chip");
+  allChips.forEach((c) => c.setAttribute("aria-pressed", "false"));
+  chip.setAttribute("aria-pressed", "true");
+
+  const field = chip.dataset.field;
+  renderResources(field);
+}
+
+function initResourcesPage() {
+  const filterBar = document.getElementById("resource-filters");
+  if (!filterBar) return;
+
+  filterBar.addEventListener("click", handleFilterClick);
+  renderResources("all");
+}
+
+document.addEventListener("DOMContentLoaded", initResourcesPage);

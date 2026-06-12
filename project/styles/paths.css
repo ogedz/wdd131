@@ -1,0 +1,87 @@
+/* ==========================================================================
+   EduPath Nigeria — Path Finder Page Styles
+   Covers the recommended pathway result cards, the stepped pathway list,
+   bookmark/save buttons, and the saved pathways list.
+   Author: Monday Ogedengbe
+   ========================================================================== */
+
+.path-result {
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  background-color: var(--color-card);
+}
+
+.path-result h3 {
+  color: var(--color-primary);
+}
+
+.path-steps {
+  list-style: none;
+  margin: var(--space-sm) 0;
+  padding: 0;
+  position: relative;
+}
+
+.path-steps li {
+  position: relative;
+  padding: 0.5rem 0 0.5rem 2rem;
+  border-left: 3px solid var(--color-accent);
+  margin-left: 0.6rem;
+}
+
+.path-steps li::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 1rem;
+  width: 14px;
+  height: 14px;
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+}
+
+.path-steps li:last-child {
+  border-left-color: transparent;
+}
+
+.bookmark-btn {
+  background: none;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bookmark-btn[aria-pressed="true"] {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+/* --------------------------------------------------------------------- */
+/* Saved pathways list                                                    */
+/* --------------------------------------------------------------------- */
+.saved-paths-list {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.saved-paths-list li {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}

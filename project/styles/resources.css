@@ -1,0 +1,37 @@
+/* ==========================================================================
+   EduPath Nigeria — Resources Page Styles
+   Covers the field-filter bar and filter chips used to narrow the
+   training resources directory.
+   Author: Monday Ogedengbe
+   ========================================================================== */
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: var(--space-lg);
+  justify-content: center;
+}
+
+.filter-chip {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  border: 2px solid var(--color-primary);
+  background-color: transparent;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.filter-chip:hover,
+.filter-chip:focus-visible {
+  background-color: rgba(11, 110, 79, 0.1);
+}
+
+.filter-chip[aria-pressed="true"] {
+  background-color: var(--color-primary);
+  color: #fff;
+}

@@ -1,0 +1,62 @@
+/* ==========================================================================
+   EduPath Nigeria — Home Page Styles
+   Covers the stats bar and the closing call-to-action band.
+   Author: Monday Ogedengbe
+   ========================================================================== */
+
+/* --------------------------------------------------------------------- */
+/* Stats bar                                                              */
+/* --------------------------------------------------------------------- */
+.stats {
+  background-color: var(--color-card);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.stats .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  padding-block: var(--space-lg);
+  text-align: center;
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 700px) {
+  .stats .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* --------------------------------------------------------------------- */
+/* CTA band                                                               */
+/* --------------------------------------------------------------------- */
+.cta-band {
+  background-color: var(--color-primary-dark);
+  color: #fff;
+  text-align: center;
+  padding-block: var(--space-xl);
+}
+
+.cta-band h2 {
+  color: #fff;
+  margin-bottom: var(--space-xs);
+}
+
+.cta-band p {
+  max-width: 50ch;
+  margin-inline: auto;
+  margin-bottom: var(--space-md);
+  color: rgba(255, 255, 255, 0.85);
+}
