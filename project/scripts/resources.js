@@ -106,7 +106,7 @@ const trainingResources = [
   },
   {
     id: "spoken-word-academy",
-    name: "Spoken Word & Design Academy",
+    name: "Spoken Word &amp; Design Academy",
     field: "creative",
     type: "Online Course",
     location: "Online (Nationwide)",
@@ -125,8 +125,8 @@ function buildResourceCardMarkup(resource) {
       <img
         data-lazy="${resource.image}"
         alt="${resource.name} training facility"
-        width="500"
-        height="375"
+        width="400"
+        height="300"
         loading="lazy"
       >
       <span class="tag">${resource.type}</span>

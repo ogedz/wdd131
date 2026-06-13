@@ -70,8 +70,8 @@ function buildStoryCardMarkup(story) {
       <img
         data-lazy="${story.image}"
         alt="Portrait of ${story.name}"
-        width="500"
-        height="375"
+        width="400"
+        height="300"
         loading="lazy"
       >
       <span class="tag">${story.pathway}</span>

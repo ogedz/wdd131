@@ -21,19 +21,6 @@ function initNavToggle() {
 }
 
 /**
- * Insert the current year into every element with [data-year].
- * Demonstrates: Date object, template literals, DOM modification.
- */
-function initFooterYear() {
-  const yearEls = document.querySelectorAll("[data-year]");
-  const currentYear = new Date().getFullYear();
-
-  yearEls.forEach((el) => {
-    el.textContent = `${currentYear}`;
-  });
-}
-
-/**
  * Render the SVG "pathway" divider — the site's signature visual motif.
  * A stepped route line with a marker, used between major sections.
  * Demonstrates: template literals for building markup.
@@ -86,7 +73,6 @@ function initLazyLoading() {
 
 document.addEventListener("DOMContentLoaded", () => {
   initNavToggle();
-  initFooterYear();
   renderPathwayDividers();
   initLazyLoading();
 });

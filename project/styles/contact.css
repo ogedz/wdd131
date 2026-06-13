@@ -51,29 +51,3 @@
   padding: 0 var(--space-md) var(--space-md);
   max-height: 400px;
 }
-
-.social-links {
-  display: flex;
-  gap: 0.75rem;
-  margin-top: var(--space-sm);
-}
-
-.social-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  border: 2px solid var(--color-accent);
-  color: var(--color-accent);
-  font-size: 1.1rem;
-  transition: background-color 0.15s ease, color 0.15s ease;
-}
-
-.social-link:hover,
-.social-link:focus-visible {
-  background-color: var(--color-accent);
-  color: var(--color-ink);
-  text-decoration: none;
-}

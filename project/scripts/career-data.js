@@ -59,7 +59,7 @@ const careerPaths = [
   },
   {
     id: "business-accounting",
-    title: "Accounting & Bookkeeping",
+    title: "Accounting &amp; Bookkeeping",
     field: "business",
     levels: ["ssce", "nd", "hnd", "bsc"],
     locations: ["lagos", "abuja", "ibadan", "port-harcourt", "any"],
@@ -161,7 +161,7 @@ const careerPaths = [
   },
   {
     id: "creative-fashion-design",
-    title: "Fashion Design & Production",
+    title: "Fashion Design &amp; Production",
     field: "creative",
     levels: ["ssce", "nd", "hnd"],
     locations: ["lagos", "abuja", "ibadan", "any"],
@@ -178,7 +178,7 @@ const careerPaths = [
   },
   {
     id: "trades-electrical",
-    title: "Electrical Installation & Maintenance",
+    title: "Electrical Installation &amp; Maintenance",
     field: "trades",
     levels: ["ssce", "nd"],
     locations: ["lagos", "abuja", "ibadan", "port-harcourt", "any"],
@@ -195,7 +195,7 @@ const careerPaths = [
   },
   {
     id: "trades-automotive",
-    title: "Automotive Repair & Maintenance",
+    title: "Automotive Repair &amp; Maintenance",
     field: "trades",
     levels: ["ssce", "nd"],
     locations: ["lagos", "abuja", "ibadan", "port-harcourt", "any"],
