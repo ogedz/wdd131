@@ -5,12 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Browse a directory of verified Nigerian training institutions, bootcamps, and programmes across technology, business, healthcare, agriculture, creative arts, and trades.">
   <meta name="author" content="Monday Ogedengbe">
+  
   <title>Resources | EduPath Nigeria</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/resources.css">
+
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/resources.js"></script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -89,13 +95,10 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; <span data-year>2026</span> EduPath Nigeria. Built by Monday Ogedengbe for WDD 131.</p>
+      <p>&copy;<span id="currentyear"></span> EduPath Nigeria.🌴 Monday Ogedengbe 🌴 WDD 131</p>
+      <p id="lastModified"></p>
     </div>
   </footer>
-
-  <script src="scripts/main.js"></script>
-  <script src="scripts/resources.js"></script>
-  <!-- main.js defines initLazyLoading; resources.js uses it after dynamic render -->
 
 </body>
 </html>

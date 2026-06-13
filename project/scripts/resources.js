@@ -12,7 +12,7 @@ const trainingResources = [
     type: "Online Bootcamp",
     location: "Online (Nationwide)",
     description: "Intensive software engineering and data programmes with mentorship and a strong alumni network across Africa.",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=60"
+    image: "images/resources/alx-africa.webp"
   },
   {
     id: "decagon",
@@ -21,7 +21,7 @@ const trainingResources = [
     type: "Bootcamp",
     location: "Lagos",
     description: "Full-time software engineering fellowship that places graduates directly with hiring partners after training.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=60"
+    image: "images/resources/decagon.webp"
   },
   {
     id: "yaba-college",
@@ -30,7 +30,7 @@ const trainingResources = [
     type: "Polytechnic",
     location: "Lagos",
     description: "Offers ND and HND programmes across engineering, applied sciences, and technical trades.",
-    image: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=500&q=60"
+    image: "images/resources/yaba-college.webp"
   },
   {
     id: "itf-vocational",
@@ -39,7 +39,7 @@ const trainingResources = [
     type: "Government Programme",
     location: "Multiple states",
     description: "Industrial Training Fund centres offering hands-on training in electrical work, automotive repair, and more.",
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=500&q=60"
+    image: "images/resources/itf-vocational.webp"
   },
   {
     id: "lagos-business-school",
@@ -48,7 +48,7 @@ const trainingResources = [
     type: "Executive Education",
     location: "Lagos",
     description: "Short, practical courses in entrepreneurship, finance, and management for working professionals.",
-    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=500&q=60"
+    image: "images/resources/lagos-business-school.webp"
   },
   {
     id: "ican",
@@ -57,7 +57,7 @@ const trainingResources = [
     type: "Professional Body",
     location: "Nationwide",
     description: "The Institute of Chartered Accountants of Nigeria's qualification pathway for professional accountants.",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=500&q=60"
+    image: "images/resources/ican.webp"
   },
   {
     id: "schools-of-nursing",
@@ -66,7 +66,7 @@ const trainingResources = [
     type: "Diploma Programme",
     location: "Multiple states",
     description: "Government-run nursing schools offering accredited programmes leading to NMCN licensure.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=500&q=60"
+    image: "images/resources/schools-of-nursing.webp"
   },
   {
     id: "pcn-pharmacy-tech",
@@ -75,7 +75,7 @@ const trainingResources = [
     type: "OND Programme",
     location: "Multiple states",
     description: "Polytechnic programmes accredited by the Pharmacists Council of Nigeria for pharmacy technicians.",
-    image: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=500&q=60"
+    image: "images/resources/pcn-pharmacy-tech.webp"
   },
   {
     id: "iita-youth-agripreneurs",
@@ -84,7 +84,7 @@ const trainingResources = [
     type: "Incubation Programme",
     location: "Ibadan",
     description: "Hands-on agribusiness training and incubation for young people interested in modern farming and agro-processing.",
-    image: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=500&q=60"
+    image: "images/resources/iita-youth-agripreneurs.webp"
   },
   {
     id: "fadama-extension",
@@ -93,7 +93,7 @@ const trainingResources = [
     type: "Government Programme",
     location: "Multiple states",
     description: "Agricultural extension support connecting farmers and trainees with modern techniques and resources.",
-    image: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=500&q=60"
+    image: "images/resources/fadama-extension.webp"
   },
   {
     id: "fashion-academy-lagos",
@@ -102,7 +102,7 @@ const trainingResources = [
     type: "Vocational School",
     location: "Lagos",
     description: "Pattern-making, sewing, and fashion business courses for aspiring designers and entrepreneurs.",
-    image: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=500&q=60"
+    image: "images/resources/fashion-academy-lagos.webp"
   },
   {
     id: "spoken-word-academy",
@@ -111,7 +111,7 @@ const trainingResources = [
     type: "Online Course",
     location: "Online (Nationwide)",
     description: "Graphic design, branding, and content creation courses with project-based learning.",
-    image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=500&q=60"
+    image: "images/resources/graphic-design-academy.webp"
   }
 ];
 

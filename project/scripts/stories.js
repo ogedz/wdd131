@@ -10,7 +10,7 @@ const successStories = [
     name: "Adaobi Eze",
     location: "Lagos",
     pathway: "ND → Tech Lead",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=60",
+    image: "images/stories/adaobi.webp",
     summary: "Moved from a National Diploma in Computer Science to leading a development team at a Lagos fintech.",
     fullStory: "Adaobi completed her National Diploma in Computer Science at Yaba College of Technology, unsure whether her qualification would be enough to compete for tech roles. Instead of waiting for a degree, she enrolled in a frontend development bootcamp and built a portfolio of small projects. Her first job was a junior developer role at a small startup, where she focused on learning quickly and taking on extra responsibility. Within four years, consistent upskilling in React and team leadership courses helped her move into a tech lead role overseeing a team of six engineers at a Lagos-based fintech company."
   },
@@ -19,7 +19,7 @@ const successStories = [
     name: "Emmanuel Okafor",
     location: "Port Harcourt",
     pathway: "SSCE → Data Analyst",
-    image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=500&q=60",
+    image: "images/stories/emmanuel.webp",
     summary: "Used online courses and bootcamps to break into a data analyst role without a university degree.",
     fullStory: "After his SSCE results didn't meet the cutoff for his preferred university course, Emmanuel decided not to wait another year for admission. He spent six months learning Excel, SQL, and Power BI through free and low-cost online courses, supplementing his learning with YouTube tutorials in the evenings while working a part-time job. He built a small portfolio analysing publicly available Nigerian economic data. A local logistics company hired him as a junior data analyst at age 22, and he has since been promoted twice, now managing reporting for three regional offices."
   },
@@ -28,7 +28,7 @@ const successStories = [
     name: "Chioma Adebayo",
     location: "Abuja",
     pathway: "HND → Founder",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=500&q=60",
+    image: "images/stories/chioma.webp",
     summary: "Built a thriving Adire fashion brand after completing her Higher National Diploma in Fashion Design.",
     fullStory: "Chioma earned her HND in Fashion Design from a polytechnic in Abuja, then apprenticed for a year under an established designer to learn pattern-making and production at scale. Rather than seeking employment, she started by selling handmade Adire pieces to friends and family, reinvesting every profit into fabric and equipment. She used Instagram to showcase her designs and built a loyal customer base. Two years later, her brand employs three tailors and supplies pieces to two boutiques in Abuja, with plans to open her first physical store."
   },
@@ -37,7 +37,7 @@ const successStories = [
     name: "Tunde Bakare",
     location: "Ibadan",
     pathway: "BSc → Agripreneur",
-    image: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=500&q=60",
+    image: "images/stories/tunde.webp",
     summary: "Combined his Agricultural Science degree with a youth agripreneur programme to launch a poultry business.",
     fullStory: "Tunde graduated with a BSc in Agricultural Science but found that most graduate jobs in his field offered low pay and slow progression. He joined a youth agripreneur incubation programme in Ibadan, which gave him practical training in modern poultry farming, business planning, and access to a small starter loan. He started with 200 birds on a rented plot of land. Eighteen months later, his farm produces eggs and broilers for three local markets, and he has hired two part-time workers from his community."
   },
@@ -46,7 +46,7 @@ const successStories = [
     name: "Blessing Nwachukwu",
     location: "Lagos",
     pathway: "SSCE → Pharmacy Technician",
-    image: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=500&q=60",
+    image: "images/stories/blessing.webp",
     summary: "Trained as a pharmacy technician straight after secondary school and now works at a busy community pharmacy.",
     fullStory: "Blessing knew she wanted a career in healthcare but didn't want to spend five years pursuing a nursing or pharmacy degree. After her SSCE, she enrolled in an OND programme in Pharmacy Technology, completing it in two years with a one-year practical attachment at a hospital pharmacy. After registering with the Pharmacists Council of Nigeria, she found a role at a community pharmacy in Lagos, where she now manages dispensing for over 100 customers a day and is studying part-time toward a further qualification."
   },
@@ -55,7 +55,7 @@ const successStories = [
     name: "Ifeoma Chukwu",
     location: "Online / Remote",
     pathway: "ND → Digital Marketer",
-    image: "https://images.unsplash.com/photo-1589156280159-27698a70f29e?auto=format&fit=crop&w=500&q=60",
+    image: "images/stories/ifeoma.webp",
     summary: "Took her National Diploma in Mass Communication and turned it into a remote digital marketing career.",
     fullStory: "Ifeoma's ND in Mass Communication gave her strong writing skills, but she struggled to find relevant jobs in Lagos. She completed free certifications in Google Ads and Meta Blueprint, then offered to manage social media for a friend's small business at no cost to build a case study. That case study helped her land her first paid client, and within a year she was managing social media accounts for five small businesses remotely, eventually being hired full-time by a digital agency that allows her to work from home in Enugu."
   }
